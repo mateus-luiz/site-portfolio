@@ -3,11 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/about.css"/>
+    <link rel="stylesheet" href="css/knowledge.css"/>
+    <link rel="stylesheet" href="css/projects.css"/>
+    <link rel="stylesheet" href="css/contact.css"/>
+
     <title>Portifolio</title>
 </head>
 <body>
     <header>
-        <h1>Full stack developer</h1>
+        <div class="title">
+            <h1>Full stack developer & Game Developer</h1>
+            <h2>Mateus Luiz</h2>
+            <button id="fAbout" name="fAbout">Saiba mais</button>
+        </div>
     </header>
+    <main>
+        <div class="knowledge">
+            <h2>CONHECIMENTOS</h2>
+            <div class="grid">
+                <div class="grid-1">
+                    <div class="item-1"><img src="images/html.svg"><span>HTML 5</span></div>
+                    <div class="item-2"><img src="images/css.svg"><span>CSS 3</span></div>
+                    <div class="item-3"><img src="images/javascript.svg"><span>Javascript</span></div>
+                </div>
+                <img class="bg-image" src="images/knowledge.svg">
+                <div class="grid-2">
+                    <div class="item-4"><span>CSharp</span><img src="images/csharp.svg"></div>
+                    <div class="item-5"><span>dotNET Core</span><img src="images/netcore.svg"></div>
+                    <div class="item-6"><span>Unity</span><img src="images/unity.svg"></div>
+                </div>
+                    
+            </div>
+        </div>
+        <div class="projects">
+            <h2>PROJETOS</h2>
+            <div class="card-grid">
+                <div class="card" id="card-1">
+                    <div class="title-card">
+                        <span>Console Chess</span>
+                    </div>
+                    <div class="tool-card">
+                        <span>CSharp</span>
+                    </div>
+                    <div class="description" id="text-1">
+                        <span>Aplicativo para jogar xadrez pelo console. Feito durante o curso de C#</span>
+                    </div>
+                    <a href="https://github.com/mateus-luiz/ConsoleChess" target="_blank"><button class="card-button">Saiba Mais</button></a>
+                </div>
+                <div class="card" id="card-2">
+                    <div class="title-card">
+                        <span>Consulta CEP</span>
+                    </div>
+                    <div class="tool-card">
+                        <span>CSharp</span>
+                    </div>
+                    <div class="description" id="text-2">
+                        <span>Programa desktop utilizando API dos Correios para pesquisar CEP</span>
+                    </div>
+                    <a href="https://github.com/mateus-luiz/consultar-ceps" target="_blank"><button class="card-button">Saiba Mais</button></a>
+                </div>
+                <div class="card" id="card-3">
+                    <div class="title-card">
+                        <span>Sistema de login</span>
+                    </div>
+                    <div class="tool-card">
+                        <span>CSharp</span>
+                    </div>
+                    <div class="description" id="text-3">
+                        <span>Sistema de autenticação de usuário, utilizando banco de dados MySql</span>
+                    </div>
+                    <a href="https://github.com/mateus-luiz/login-system" target="_blank"><button class="card-button">Saiba Mais</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2 class="about-title">SOBRE-MIM</h2>
+            <div>
+                <img class="about-image" src="images/about.svg">
+                <span class="about-text">Meu nome é Mateus Luiz, tenho 20 anos. Conheci o mundo do desenvolvimento quando tinha 16 anos, 
+                    mas resolvi focar nos estudo e me aprofundar no desenvolvimento em 2020, quando me apaxonei pelo mundo da tecnologia.</span>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>CONTACTE-ME</h2>
+            <form class="sendEmail">
+                <div class="inputs">
+                    <div>
+                        <label for="fName">Nome:</label>
+                        <input type="text" class="fName" id="fName" name="fName" size="30">
+                    </div>
+                    <div>
+                        <label for="fEmail">Email:</label>
+                        <input type="email" class="fEmail" id="fEmail" name="fEmail" size="50">
+                    </div>
+                </div>
+                <div>
+                    <label for="fMessage">Mensagem:</label>
+                    <textarea class="fTextArea" id="fMessage" name="fMessage" rows="13" cols="50"></textarea>
+                </div>
+            </form>
+            
+        </div>
+    </main>
 </body>
 </html>
+
+
+<a href="https://storyset.com/work">Work illustrations by Storyset</a>

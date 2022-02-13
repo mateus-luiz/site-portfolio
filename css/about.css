@@ -1,0 +1,33 @@
+div.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+div.about h2{
+    margin: auto;
+    font-family: var(--second-font), sans-serif;
+    border-bottom: 3px solid var(--pink);
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+div.about span{
+    padding: 15px;
+    margin: auto;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+div.about div{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+div.about span.about-text{
+    justify-items: center;
+    font-size: 18pt;
+    font-family: var(--second-font);
+    text-align: left;
+    margin-right: 15px;
+}

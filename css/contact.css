@@ -1,0 +1,27 @@
+div.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+div.contact h2{
+    margin: auto;
+    font-family: var(--second-font), sans-serif;
+    border-bottom: 3px solid var(--pink);
+    font-size: 24pt;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+div.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #222;
+    box-shadow: 3px 5px 5px #111;
+    border-radius: 2px;
+    color: white;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    width: 900px;
+    height: 300px;
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --primary-font: 'Baloo Da 2';
+    --second-font: 'Josefin Slab';
+    --third-font: 'Muli';
+    --shadow-color: #000;
+    --pink: #ff006e;
+    --ubuntu-font: 'Ubuntu';
+}
+
+body{
+    margin: 0;
+    font-family: var(--ubuntu-font), sans-serif;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+div.title{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    height: 750px;
+    border-radius: 4px;
+    color: #edede8;
+    margin-bottom: 20px;
+}
+
+div.title h1{
+    font-size: 48pt;
+    font-family: var(--ubuntu-font), serif;
+    font-weight: bold;
+    text-shadow: 5px 8px 3px var(--shadow-color);
+    margin: auto;
+    margin-bottom: 0;
+}
+
+div.title h2{
+    font-size: 20pt;
+    font-family: var(--second-font), sans-serif;
+    margin: 0 auto;
+    text-shadow: 3px 5px 4px var(--shadow-color);
+}
+
+div.title button{
+    width: 125px;
+    height: 50px;
+    margin: auto;
+    margin-top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px var(--shadow-color);
+}
+
+div.title button:hover{
+    background: var(--pink);
+}
+
+div.title button:active{
+    background: #ce276f;
+}

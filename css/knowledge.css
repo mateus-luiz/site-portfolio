@@ -1,0 +1,57 @@
+div.knowledge{
+    display: flex;
+    flex-direction: column;
+}
+
+div.knowledge h2{
+    margin: auto;
+    font-family: var(--second-font), sans-serif;
+    border-bottom: 3px solid var(--pink);
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+div.knowledge div.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 18pt;
+    font-family: var(--second-font);
+}
+
+div.grid-1, div.grid-2{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+div.grid-1{
+    justify-items: right;
+}
+
+div.grid-1 > div, div.grid-2 > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+div.grid-2{
+    justify-items: left;
+}
+
+div.grid-1 img, div.grid-2 img{
+    width: 64px;
+    height: 64px;
+    align-items: center;
+
+}
+
+div.item-2{
+    margin-right: 20%;
+}
+
+div.item-5{
+    margin-left: 5%;
+}
+
+div.grid-1 span:hover, div.grid-2 span:hover{
+    border-bottom: 3px solid var(--pink);
+}
