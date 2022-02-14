@@ -49,7 +49,8 @@ div.title h2{
     text-shadow: 3px 5px 4px var(--shadow-color);
 }
 
-div.title button{
+div.title a{
+    display: flex;
     width: 125px;
     height: 50px;
     margin: auto;
@@ -57,16 +58,52 @@ div.title button{
     color: #fff;
     font-weight: bold;
     font-size: 12pt;
+    text-decoration: none;
+    text-align: center;
     background-color: var(--pink);
     border: 1px solid var(--pink);
     border-radius: 8px;
     box-shadow: 5px 5px 10px var(--shadow-color);
 }
 
-div.title button:hover{
+div.title a:hover{
     background: var(--pink);
 }
 
-div.title button:active{
+div.title a:active{
     background: #ce276f;
+}
+
+div.title a span{
+    margin: auto;
+}
+footer{
+    display: flex;
+    background: #f0f0f0;
+    height: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 10pt;
+    font-family: var(--ubuntu-font);
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer div{
+    display: inline-flex;
+}
+
+footer a{
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+footer img{
+    width: 28px;
+    height: 28px;
 }

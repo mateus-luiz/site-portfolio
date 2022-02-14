@@ -12,16 +12,17 @@
 
     <title>Portifolio</title>
 </head>
+
 <body>
     <header>
         <div class="title">
             <h1>Full stack developer & Game Developer</h1>
             <h2>Mateus Luiz</h2>
-            <button id="fAbout" name="fAbout">Saiba mais</button>
+            <a id="fAbout" name="fAbout" href="#scroll"><span>Saiba mais</span></a>
         </div>
     </header>
     <main>
-        <div class="knowledge">
+        <div class="knowledge" id="scroll">
             <h2>CONHECIMENTOS</h2>
             <div class="grid">
                 <div class="grid-1">
@@ -35,7 +36,6 @@
                     <div class="item-5"><span>dotNET Core</span><img src="images/netcore.svg"></div>
                     <div class="item-6"><span>Unity</span><img src="images/unity.svg"></div>
                 </div>
-                    
             </div>
         </div>
         <div class="projects">
@@ -79,7 +79,6 @@
                 </div>
             </div>
         </div>
-
         <div class="about">
             <h2 class="about-title">SOBRE-MIM</h2>
             <div>
@@ -88,30 +87,43 @@
                     mas resolvi focar nos estudo e me aprofundar no desenvolvimento em 2020, quando me apaxonei pelo mundo da tecnologia.</span>
             </div>
         </div>
-
         <div class="contact">
             <h2>CONTACTE-ME</h2>
-            <form class="sendEmail">
-                <div class="inputs">
-                    <div>
-                        <label for="fName">Nome:</label>
-                        <input type="text" class="fName" id="fName" name="fName" size="30">
+            <div class="card">
+                <form class="sendEmail" action="https://formsubmit.co/mateus.florentino2001@gmail.com" method="post" enctype="text/plain">
+                    <div class="inputs">
+                        <div class="name">
+                            <label for="fName">Nome:</label>
+                            <input type="text" class="fName" id="fName" name="name" size="45" required>
+                        </div>
+                        <div class="email">
+                            <label for="fEmail">Email:</label>
+                            <input type="hidden" name="_subject" value="Nova mensagem">
+                            <input type="email" class="fEmail" id="fEmail" name="email" size="45" required>
+                        </div>
                     </div>
-                    <div>
-                        <label for="fEmail">Email:</label>
-                        <input type="email" class="fEmail" id="fEmail" name="fEmail" size="50">
+                    <div class="message">
+                        <label for="fMessage">Mensagem</label>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <textarea class="fTextArea" id="fMessage" name="message" rows="13" cols="50" required></textarea>
                     </div>
-                </div>
-                <div>
-                    <label for="fMessage">Mensagem:</label>
-                    <textarea class="fTextArea" id="fMessage" name="fMessage" rows="13" cols="50"></textarea>
-                </div>
-            </form>
-            
+                    <div class="send">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>   
         </div>
     </main>
+    <footer>
+        <div>
+            <a href="https://github.com/mateus-luiz" target="_blank"><img src="images/github-ico.svg"></a>
+            <a href="https://www.instagram.com/_.xmateusx._/" target="_blank"><img src="images/instagram-ico.svg"></a>
+            <a href="https://br.linkedin.com/in/mateus-luiz-florentino-toledo-b8180622b/" target="_blank"><img src="images/linkedin-ico.svg"></a>
+        </div>
+        <span>Copyright © 2022</span>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
-
-
-<a href="https://storyset.com/work">Work illustrations by Storyset</a>
