@@ -90,7 +90,7 @@
         <div class="contact">
             <h2>CONTACTE-ME</h2>
             <div class="card">
-                <form class="sendEmail" action="https://formsubmit.co/mateus.florentino2001@gmail.com" method="post" enctype="text/plain">
+                <form class="sendEmail" action="https://formsubmit.co/contato.mateusdev2001@gmail.com" method="POST">
                     <div class="inputs">
                         <div class="name">
                             <label for="fName">Nome:</label>
@@ -98,17 +98,15 @@
                         </div>
                         <div class="email">
                             <label for="fEmail">Email:</label>
-                            <input type="hidden" name="_subject" value="Nova mensagem">
                             <input type="email" class="fEmail" id="fEmail" name="email" size="45" required>
                         </div>
                     </div>
                     <div class="message">
                         <label for="fMessage">Mensagem</label>
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
                         <textarea class="fTextArea" id="fMessage" name="message" rows="13" cols="50" required></textarea>
                     </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
                     <div class="send">
-                        <input type="hidden" name="_captcha" value="false">
                         <button type="submit">Enviar</button>
                     </div>
                 </form>

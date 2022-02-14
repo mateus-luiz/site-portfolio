@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --primary-font: 'Baloo Da 2';
+    --second-font: 'Josefin Slab';
+    --third-font: 'Muli';
+    --shadow-color: #000;
+    --pink: #ff006e;
+    --ubuntu-font: 'Ubuntu';
+}
+
+body{
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+}
+
+main{
+    margin: 200px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    color: #edede8;
+    margin: auto;
+    text-align: center;
+}
+
+div h1{
+    font-size: 48pt;
+    font-family: var(--ubuntu-font), serif;
+    font-weight: bold;
+    text-shadow: 5px 8px 3px var(--shadow-color);
+    margin: 0 auto;
+    text-align: center;
+}
+
+div h2{
+    font-size: 28pt;
+    font-family: var(--second-font), sans-serif;
+    text-shadow: 3px 5px 4px var(--shadow-color);
+    text-align: center;
+    margin: auto;
+}
+
+div a{
+    display: flex;
+    width: 125px;
+    height: 50px;
+    margin: auto;
+    margin-top: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px var(--shadow-color);
+}
